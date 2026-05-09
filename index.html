@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمار محمد دسوقي | Ammar Desouky</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a2a6c;
+            --accent-color: #f1c40f;
+            --text-light: #ffffff;
+            --bg-gradient: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--bg-gradient);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--accent-color);
+            margin-bottom: 20px;
+            object-fit: cover;
+            background: #eee;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -50px auto 40px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            width: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-right: 5px solid var(--accent-color);
+            padding-right: 15px;
+            margin-bottom: 25px;
+        }
+
+        .timeline {
+            border-right: 3px solid var(--accent-color);
+            padding-right: 20px;
+            margin-right: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: #e9ecef;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #e1306c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            text-align: right;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/150" class="profile-img">
+    <h1>عمار محمد محمد دسوقي</h1>
+    <p>لاعب كرة قدم محترف | وسط مهاجم - جناح أيسر</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>البطاقة التعريفية</h2>
+        <div class="grid">
+            <div class="info-item"><i class="fas fa-calendar-alt"></i><span><strong>تاريخ الميلاد:</strong> 22 يناير 2006</span></div>
+            <div class="info-item"><i class="fas fa-arrows-alt-v"></i><span><strong>الطول:</strong> 1.78 م</span></div>
+            <div class="info-item"><i class="fas fa-shield-alt"></i><span><strong>النادي الحالي:</strong> الترسانة</span></div>
+            <div class="info-item"><i class="fas fa-running"></i><span><strong>مركز اللعب:</strong> وسط مهاجم / جناح أيسر</span></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>المميزات الفنية</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">القدم المزدوجة</div>
+            <div class="skill-tag">رؤية الملعب</div>
+            <div class="skill-tag">القوة البدنية</div>
+            <div class="skill-tag">صناعة اللعب</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>المسيرة الاحترافية</h2>
+        <div class="timeline">
+            <div class="timeline-item">2025: الترسانة</div>
+            <div class="timeline-item">2024: النصر القاهري</div>
+            <div class="timeline-item">2023: النصر السعودي</div>
+            <div class="timeline-item">2022: الدرعية</div>
+            <div class="timeline-item">2021: القناة</div>
+            <div class="timeline-item">2020: زد</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>تواصل معي</h2>
+        <a href="#" class="social-btn">إنستغرام</a>
+    </div>
+
+</div>
+
+</body>
+</html>
